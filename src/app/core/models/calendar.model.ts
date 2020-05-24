@@ -37,6 +37,8 @@ export class EventAdapter implements Adapter<CalendarEvent> {
         return new CalendarEvent(
             item.title,
             item.description_short,
+            // If we don't have at least one image -> []
+            (item.images.length && item.images[0].thumbnail) ?
             item.images.map(image => new Image(
                 new ImageInfo(
                     image.thumbnail.width,
@@ -58,7 +60,7 @@ export class EventAdapter implements Adapter<CalendarEvent> {
                     image.full.url,
                     image.full.height
                 )
-            )),
+            )) : [],
             item.start_datetime
         );
      }
