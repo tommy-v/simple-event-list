@@ -1,0 +1,28 @@
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: $black;
+}
+
+.event-content {
+  p {
+    font-size: 15px;
+    font-family: $font-condensed;
+    margin: 0;
+  }
+  h2 {
+    font-size: 23px;
+    font-family: $font-condensed;
+    color: $color-h2;
+    font-weight: 700;
+    margin:0;
+  }
+  h3 {
+    font-size: 15px;
+    font-family: $font-headline;
+    color: $color-h3;
+    font-weight: 300;
+    margin:0;
+  }
+}

@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global Angular scss import file */
+
+@import url(https://fonts.googleapis.com/css?family=Satisfy|Roboto:300,400,500,700,900|Montserrat);
+
+@import "./styles/variables";
+
+@import "./styles/helpers/flex";
+@import "./styles/helpers/padding";
+@import "./styles/helpers/text";
+
+@import "./styles/calendar";
+@import "./styles/event-card";

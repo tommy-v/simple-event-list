@@ -1,0 +1,23 @@
+// Colors
+
+$color-h2: black;
+$color-h3: #838383;
+
+$white: #fff;
+$black: #000;
+
+$colors: (
+  white: $white,
+  black: $black,
+);
+
+// Fonts
+
+$font-headline: 'Montserrat', sans-serif;
+$font-text: 'Roboto', sans-serif;
+$font-condensed: 'Roboto Condensed', sans-serif;
+$font-cursive: 'Satisfy', cursive;
+
+// Layout
+
+$max-content-width: 600px;
