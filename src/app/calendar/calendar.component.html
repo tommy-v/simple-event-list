@@ -2,5 +2,12 @@
 
 
 <div>
+    <ng-container *ngIf='(events$ | async) as events'>
+        YYY
+        <ng-container *ngFor="let event of events">
+            {{ event.title }}
+        </ng-container>
+    </ng-container>
+
     <app-event-card></app-event-card>
 </div>
