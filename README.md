@@ -44,7 +44,7 @@ Angular version: 9
 
 ## Styles
 
-For ease purpose, the scss styles are centralized into `/src/styles` and imports in `/src/styles.scss`.
+For ease purpose, the global scss styles are centralized into `/src/styles` and imports in `/src/styles.scss`.
 
 ## API
 
