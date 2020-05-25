@@ -37,12 +37,10 @@ Angular version: 9
 
 ## Todo
 
-- iPhone 5 pixel perfect format.
 - Load more / pagination: need API update (limit & offset).
 - Testing?
 - Using the different image sizes.
 - Better mocking system at: `src/app/core/services/calendar.service.ts`
-- Display loadings.
 
 ## Styles
 
@@ -62,4 +60,4 @@ For ease purpose, the global scss styles are centralized into `/src/styles` and 
 
 ## Live demo
 
-https://events.thomas.com
+https://events.thomasvdc.com
