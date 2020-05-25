@@ -13,6 +13,7 @@ Angular version: 9
 - [Styles](#styles)
 - [API](#api)
 - [Compatibility](#compatibility)
+- [Live demo](#live-demo)
 
 ## Install
 
@@ -41,6 +42,7 @@ Angular version: 9
 - Testing?
 - Using the different image sizes.
 - Better mocking system at: `src/app/core/services/calendar.service.ts`
+- Display loadings.
 
 ## Styles
 
@@ -57,3 +59,7 @@ For ease purpose, the global scss styles are centralized into `/src/styles` and 
 - ✅Safari Desktop
 - ✅Safari Mobile 📱
 - ✅Edge 
+
+## Live demo
+
+https://events.thomas.com
