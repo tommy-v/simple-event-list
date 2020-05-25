@@ -2,12 +2,14 @@
     <h1>Calendar view</h1>
 </div>
 
-<div class="flex wrap justify-center align-center">
-    <ng-container class="event-list" *ngIf='(events$ | async) as events'>
-        <ng-container *ngFor="let event of events">
-            <div class="pv10 ph10">
-                <app-event-card class="limit" [event]="event"></app-event-card>
+<div>
+    <ngx-masonry [options]="{ fitWidth: true }" class='grid'>
+        <ng-container class="event-list" *ngIf='(events$ | async) as events'>
+            <div ngxMasonryItem *ngFor="let event of events">
+                <div class="pv10 ph10">
+                    <app-event-card class="limit" [event]="event"></app-event-card>
+                </div>
             </div>
         </ng-container>
-    </ng-container>
+    </ngx-masonry>
 </div>

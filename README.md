@@ -1,27 +1,55 @@
-# Calendar
+# Response Event List <!-- omit in toc -->
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
+This is a simple Calendar who displays a list of events.
 
-## Development server
+Angular version: 9
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- [Install](#install)
+- [Run 🚀](#run-%f0%9f%9a%80)
+  - [Run on other devices](#run-on-other-devices)
+- [Build](#build)
+- [Commit convention](#commit-convention)
+- [Todo](#todo)
+- [Styles](#styles)
+- [API](#api)
+- [Compatibility](#compatibility)
 
-## Code scaffolding
+## Install
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+`npm i`
+
+## Run 🚀
+
+`npm start`
+
+### Run on other devices
+
+`ng serve --host <@IP>`
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+`ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+## Commit convention
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+*Angular commit convention*: https://github.com/angular/angular/blob/master/CONTRIBUTING.md
 
-## Running end-to-end tests
+## Todo
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+iPhone 5 format pixel perfect.
 
-## Further help
+## Styles
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+For ease purpose, the scss styles are centralized into `/src/styles` and imports in `/src/styles.scss`.
+
+## API
+
+`/docs/insomnia`
+
+## Compatibility
+
+✅Google Chrome
+✅Firefox
+✅Safari Desktop
+✅Safari Mobile
+✅Edge 

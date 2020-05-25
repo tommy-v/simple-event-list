@@ -5,11 +5,14 @@ import { CalendarRoutingModule } from './calendar-routing.module';
 import { CalendarComponent } from './calendar.component';
 import { EventCardComponent } from './event-card/event-card.component';
 
+import { NgxMasonryModule } from 'ngx-masonry';
+
 @NgModule({
   declarations: [CalendarComponent, EventCardComponent],
   imports: [
     CommonModule,
-    CalendarRoutingModule
+    CalendarRoutingModule,
+    NgxMasonryModule
   ]
 })
 export class CalendarModule { }
