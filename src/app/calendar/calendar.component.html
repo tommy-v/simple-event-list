@@ -2,7 +2,7 @@
     <h1>Calendar view</h1>
 </div>
 
-<div class="flex wrap justify-center">
+<div class="flex wrap justify-center align-center">
     <ng-container class="event-list" *ngIf='(events$ | async) as events'>
         <ng-container *ngFor="let event of events">
             <div class="pv10 ph10">
