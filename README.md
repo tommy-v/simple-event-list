@@ -36,7 +36,11 @@ Angular version: 9
 
 ## Todo
 
-iPhone 5 format pixel perfect.
+- iPhone 5 pixel perfect format.
+- Load more / pagination: need API update (limit & offset).
+- Testing?
+- Using the different image sizes.
+- Better mocking system at: `src/app/core/services/calendar.service.ts`
 
 ## Styles
 
@@ -48,8 +52,8 @@ For ease purpose, the scss styles are centralized into `/src/styles` and imports
 
 ## Compatibility
 
-✅Google Chrome
-✅Firefox
-✅Safari Desktop
-✅Safari Mobile
-✅Edge 
+- ✅Google Chrome
+- ✅Firefox
+- ✅Safari Desktop
+- ✅Safari Mobile 📱
+- ✅Edge 

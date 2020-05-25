@@ -5,9 +5,10 @@ import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { environment } from '../../../environments/environment';
 import { CalendarEvent } from '../models/calendar.model';
-import { of } from 'rxjs';
 
-import mock from './mocks/eventsMock';
+/* Mocking */
+// import { of } from 'rxjs';
+// import mock from './mocks/eventsMock';
 
 @Injectable({
   providedIn: 'root'
@@ -22,8 +23,8 @@ export class CalendarService {
 
     headers = headers.set('Content-Type', 'application/json; charset=utf-8');
 
-    // return this.http.get<CalendarEvent[]>(url, { headers })
-    return of(mock)
+    // return of(mock)
+    return this.http.get<CalendarEvent[]>(url, { headers })
     .pipe(
       map((response: any) => response.data.items.map(item => this.adapter.adapt(item)))
     );
