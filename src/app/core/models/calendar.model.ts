@@ -61,7 +61,7 @@ export class EventAdapter implements Adapter<CalendarEvent> {
                     image.full.height
                 )
             )) : [],
-            item.start_datetime
+            new Date(item.start_datetime.replace(/-/g, '/'))
         );
      }
 }
