@@ -1,4 +1,4 @@
-# Response Event List <!-- omit in toc -->
+# Event List <!-- omit in toc -->
 
 Just a simple event list.
 
@@ -43,9 +43,6 @@ Angular version: 9
 ## Todo
 
 - Load more / pagination: need API update (limit & offset).
-- Testing?
-- Using the different image sizes.
-- Better mocking system at: `src/app/core/services/events.service.ts`
 
 ## Styles
 
