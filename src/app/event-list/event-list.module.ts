@@ -1,20 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { CalendarRoutingModule } from './calendar-routing.module';
-import { CalendarComponent } from './calendar.component';
+import { EventListRoutingModule } from './event-list-routing.module';
+import { EventListComponent } from './event-list.component';
 import { EventCardComponent } from './event-card/event-card.component';
 
 import { NgxMasonryModule } from 'ngx-masonry';
 import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
-  declarations: [CalendarComponent, EventCardComponent],
+  declarations: [EventListComponent, EventCardComponent],
   imports: [
     CommonModule,
-    CalendarRoutingModule,
+    EventListRoutingModule,
     NgxMasonryModule,
     SharedModule
   ]
 })
-export class CalendarModule { }
+export class EventListModule { }

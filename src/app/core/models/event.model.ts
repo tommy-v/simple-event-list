@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Adapter } from '../adapter';
 
-export class CalendarEvent {
+export class Event {
     constructor(
         public title: string,
         public shortDescription: string,
@@ -13,9 +13,9 @@ export class CalendarEvent {
 @Injectable({
     providedIn: 'root'
 })
-export class EventAdapter implements Adapter<CalendarEvent> {
-    adapt(item: any): CalendarEvent {
-        return new CalendarEvent(
+export class EventAdapter implements Adapter<Event> {
+    adapt(item: any): Event {
+        return new Event(
             item.title,
             item.shortDescription,
             item.imageUrl,

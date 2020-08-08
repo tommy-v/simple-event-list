@@ -4,10 +4,10 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: '', redirectTo: 'calendar', pathMatch: 'full'
+    path: '', redirectTo: 'events', pathMatch: 'full'
   },
   {
-    path: 'calendar', loadChildren: () => import('./calendar/calendar.module').then(m => m.CalendarModule),
+    path: 'events', loadChildren: () => import('./event-list/event-list.module').then(m => m.EventListModule),
   }
 ];
 

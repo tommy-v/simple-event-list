@@ -6,25 +6,25 @@ import { HttpClientTestingModule, HttpTestingController } from '@angular/common/
 import mockEvents from '../../../test/mocks/events.mock';
 
 // Models
-import { CalendarEvent } from '../models/calendar.model';
+import { Event } from '../models/event.model';
 
 // Services
-import { CalendarService } from './calendar.service';
+import { EventService } from './event.service';
 
-describe('CalendarService', () => {
+describe('EventService', () => {
   let httpTestingController: HttpTestingController;
-  let service: CalendarService;
+  let service: EventService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [CalendarService],
+      providers: [EventService],
       imports: [
         HttpClientTestingModule,
       ],
     });
 
     httpTestingController = TestBed.get(HttpTestingController);
-    service = TestBed.get(CalendarService);
+    service = TestBed.get(EventService);
   });
 
   afterEach(() => {
@@ -35,8 +35,8 @@ describe('CalendarService', () => {
     expect(service).toBeTruthy();
   });
 
-  it('should should get calendar events', () => {
-    service.getEventById().subscribe((events: CalendarEvent[]) => {
+  it('should should get events events', () => {
+    service.getEventById().subscribe((events: Event[]) => {
       expect(events).not.toBe(null);
       expect(JSON.stringify(events)).toEqual(JSON.stringify(mockEvents));
     });

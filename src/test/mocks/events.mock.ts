@@ -1,6 +1,6 @@
-import { CalendarEvent } from 'src/app/core/models/calendar.model';
+import { Event } from 'src/app/core/models/event.model';
 
-const mockEvents: CalendarEvent[] = [
+const mockEvents: Event[] = [
   {
     title: 'Belgian Air Force Days!',
     shortDescription: 'Skate ipsum dolor sit amet, pump layback axle set Tim May egg plant nose-bump durometer. Baseplate coper hard flip vert coffin yeah. 540 indy grab Mike York dude slap maxwell hang-up deck. Smith grind Bunson over the Junson salad grind transfer bearings sponsored half-flip. Noseblunt slide nose grab late yeah crail slide manual.',

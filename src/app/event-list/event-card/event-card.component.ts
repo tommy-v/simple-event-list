@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { CalendarEvent } from 'src/app/core/models/calendar.model';
+import { Event } from 'src/app/core/models/event.model';
 
 @Component({
   selector: 'app-event-card',
@@ -7,7 +7,7 @@ import { CalendarEvent } from 'src/app/core/models/calendar.model';
   styleUrls: ['./event-card.component.scss']
 })
 export class EventCardComponent implements OnInit {
-  @Input() event: CalendarEvent;
+  @Input() event: Event;
 
   constructor() {}
 

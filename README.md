@@ -1,6 +1,6 @@
 # Response Event List <!-- omit in toc -->
 
-This is a simple Calendar who displays a list of events.
+Just a simple event list.
 
 Angular version: 9
 
@@ -45,7 +45,7 @@ Angular version: 9
 - Load more / pagination: need API update (limit & offset).
 - Testing?
 - Using the different image sizes.
-- Better mocking system at: `src/app/core/services/calendar.service.ts`
+- Better mocking system at: `src/app/core/services/events.service.ts`
 
 ## Styles
 

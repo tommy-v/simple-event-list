@@ -8,16 +8,16 @@ import { HttpRequestInterceptorMock } from '../core/services/http-request-interc
 import mockEvents from '../../test/mocks/events.mock';
 
 // Components
-import { CalendarComponent } from './calendar.component';
-import { CalendarEvent } from '../core/models/calendar.model';
+import { EventListComponent } from './event-list.component';
+import { Event } from '../core/models/event.model';
 
-describe('CalendarComponent', () => {
-  let component: CalendarComponent;
-  let fixture: ComponentFixture<CalendarComponent>;
+describe('EventListComponent', () => {
+  let component: EventListComponent;
+  let fixture: ComponentFixture<EventListComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [CalendarComponent],
+      declarations: [EventListComponent],
       imports: [HttpClientTestingModule],
       providers: [
         {
@@ -31,7 +31,7 @@ describe('CalendarComponent', () => {
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CalendarComponent);
+    fixture = TestBed.createComponent(EventListComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
@@ -41,7 +41,7 @@ describe('CalendarComponent', () => {
   });
 
   it('should render events', async () => {
-    const renderEvents: CalendarEvent[] =
+    const renderEvents: Event[] =
       fixture.debugElement.nativeElement.querySelectorAll('.ph10');
 
     expect(renderEvents).not.toBe(null);
