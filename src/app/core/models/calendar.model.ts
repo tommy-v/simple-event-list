@@ -4,29 +4,10 @@ import { Adapter } from '../adapter';
 export class CalendarEvent {
     constructor(
         public title: string,
-        public descriptionShort: string,
-        public images: Image[],
+        public shortDescription: string,
+        public imageUrl: string,
         public startDatetime: Date,
     ) { }
-}
-
-export class Image {
-    constructor(
-        public thumbnail: ImageInfo,
-        public small: ImageInfo,
-        public medium: ImageInfo,
-        public full: ImageInfo
-    ) {
-    }
-}
-
-export class ImageInfo {
-    constructor(
-        public width: number,
-        public url: string,
-        public height: number
-    ) {
-    }
 }
 
 @Injectable({
@@ -36,32 +17,9 @@ export class EventAdapter implements Adapter<CalendarEvent> {
     adapt(item: any): CalendarEvent {
         return new CalendarEvent(
             item.title,
-            item.description_short,
-            // If we don't have at least one image -> []
-            (item.images.length && item.images[0].thumbnail) ?
-            item.images.map(image => new Image(
-                new ImageInfo(
-                    image.thumbnail.width,
-                    image.thumbnail.url,
-                    image.thumbnail.height
-                ),
-                new ImageInfo(
-                    image.small.width,
-                    image.small.url,
-                    image.small.height
-                ),
-                new ImageInfo(
-                    image.medium.width,
-                    image.medium.url,
-                    image.medium.height
-                ),
-                new ImageInfo(
-                    image.full.width,
-                    image.full.url,
-                    image.full.height
-                )
-            )) : [],
-            new Date(item.start_datetime.replace(/-/g, '/'))
+            item.shortDescription,
+            item.imageUrl,
+            item.startDatetime,
         );
-     }
+    }
 }

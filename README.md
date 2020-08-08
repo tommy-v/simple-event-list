@@ -5,7 +5,8 @@ This is a simple Calendar who displays a list of events.
 Angular version: 9
 
 - [Install](#install)
-- [Run 🚀](#run-%f0%9f%9a%80)
+- [Tests run ✅](#tests-run-)
+- [Start the app 🚀](#start-the-app-)
   - [Run on other devices](#run-on-other-devices)
 - [Build](#build)
 - [Commit convention](#commit-convention)
@@ -19,7 +20,11 @@ Angular version: 9
 
 `npm i`
 
-## Run 🚀
+## Tests run ✅
+
+`npm run test`
+
+## Start the app 🚀
 
 `npm start`
 

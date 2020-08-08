@@ -1,7 +1,7 @@
 <div class="event-card">
     <div>
-        <img *ngIf="event.images.length" class="image-back" [src]="event.images[0].small.url"/>
-        <img *ngIf="!event.images.length" class="image-back" src="../assets/kitty.jpg"/>
+        <img *ngIf="event.imageUrl" class="image-back" [src]="event.imageUrl"/>
+        <img *ngIf="!event.imageUrl" class="image-back" src="../assets/kitty.jpg"/>
     </div>
 
     <div class="ph20 event-content">
@@ -13,9 +13,9 @@
         </div>
         <div class="pt10 pb20">
             <p class="description">
-                {{ event.descriptionShort }}
+                {{ event.shortDescription }}
             </p>
-            <p *ngIf='!event.descriptionShort' class="description">
+            <p *ngIf='!event.shortDescription' class="description">
                 This event has no short description.
             </p>
         </div>

@@ -16,6 +16,12 @@ describe('EventCardComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(EventCardComponent);
     component = fixture.componentInstance;
+    component.event = {
+      imageUrl: null,
+      shortDescription: 'Short description',
+      startDatetime: new Date(),
+      title: 'Event Title',
+    };
     fixture.detectChanges();
   });
 
