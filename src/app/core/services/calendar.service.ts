@@ -24,7 +24,6 @@ export class CalendarService {
 
     headers = headers.set('Content-Type', 'application/json; charset=utf-8');
 
-    // return of(mock)
     return this.http.get<CalendarEvent[]>(url, { headers })
     .pipe(
       map((response: any) => response.map(item => this.adapter.adapt(item)))

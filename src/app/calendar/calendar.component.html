@@ -3,8 +3,7 @@
 </div>
 
 <div>
-    <ngx-masonry [options]="{ fitWidth: true }" class='grid'>
-
+    <ngx-masonry [options]="{ fitWidth: true, horizontalOrder: true }" class='grid'>
         <ng-container class="event-list" *ngIf='(events$ | async) as events; else loading'>
             <div ngxMasonryItem *ngFor="let event of events">
                 <div class="pv10 ph10">
